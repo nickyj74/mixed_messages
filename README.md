@@ -19,9 +19,9 @@ I will update this once I have created my wireframe and decided what will be the
 The user will click on a button, or buttons, to go through the process of returning the random message.  I will update this section, once I have completed the full plan.
 
 ## Technologies:
-JavaScript
-HTML
-CSS
+> JavaScript
+> HTML
+> CSS
 
 ## Collaborators:
 Myself with review and edits advised by Nick Jarvis
