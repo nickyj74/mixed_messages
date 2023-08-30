@@ -1,0 +1,22 @@
+/* Here is my CSS file to accompany my mixed messages file. It should work alongside my html and javascript files.*/
+
+/* Here I'm hoping to style the main page itself */
+html {
+    background-color: ivory;
+    color: darkslategrey;
+}
+
+/* Aim to stule the title section to make it bolder than the rest of the page. */
+title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28;
+    font-weight: bold;
+}
+
+/* Goal to make the body a standardised look, so that the generator stands out more. */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20;
+    font-weight: 300;
+    display: inline-block;
+}
