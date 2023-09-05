@@ -1,0 +1,123 @@
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+p2 {
+    text-align: relative;
+}
+
+/* .name {
+    font-family: "Montserrat", sans-serif;
+    background-color: lightgrey;
+    color: darkslategrey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.6rem;
+    border-radius: var(--radius);
+    border: none;
+    box-shadow: var(--shadow);
+    position: relative;
+} */
+
+.quoteDisplay {
+    color: darkslategrey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  --shadow: darkslategrey 0px 6px 10px 0px,
+    darkslategrey 0px 0px 0px 1px;
+  --color: ivory;
+  --gap: 2px;
+  --radius: 5px;
+}
+
+body {
+  margin: 2rem;
+  background-color: ivory;
+  font-size: 17px;
+  color: darkslategrey;
+}
+
+.btn {
+  background-color: lightgrey;
+  color: darkslategrey;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: var(--gap);
+  padding: 0.6rem;
+  cursor: pointer;
+  border-radius: var(--radius);
+  border: none;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+/*.bx {
+  font-size: 15px;
+}*/
+
+.dropbtn {
+  background-color: gainsboro;
+  color: darkslategrey;
+  font-weight: 600;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 18px;
+  text-align: center;
+}
+
+/* color of dropdown button on hover & focus*/
+.dropbtn:hover, .dropbtn:focus {
+  background-color: gainsboro;
+  color: darkslategrey;
+}
+
+/* position of the div container*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content, hidden by default...*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: gainsboro;
+  min-width: 160px;
+  border: 4px darkslategrey;
+  z-index:1 ;
+}
+
+/* a href links inside the dropdown */
+.dropdown-content a {
+  color: darkslategrey;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  overflow: auto;
+}
+
+/* dropdown hover color change */
+.dropdown-content a:hover {
+  background-color: aliceblue;
+}
+
+
+.show {
+  display:block;
+  visibility: visible;
+}
+
