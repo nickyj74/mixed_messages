@@ -1,38 +1,110 @@
-//Here is my JavaScript file to go alongside my mixed messages page and accompany my html and css code for that page.
+//listed below are variable declarations for the button to work - hopefully.
 
-const starSign = ["Aries", "Leo", "Sagittarius", "Taurus", "Virgo", "Capricorn", "Gemini", "Libra", "Aquarius"];
+const dropdownBtn = document.getElementById("btn");
+const dropdownMenu = document.getElementById("dropdown");
+const toggleArrow = document.getElementById("arrow");
 
-const earth = ["Taurus", "Virgo", "Capricorn"];
-const fire = ["Aries", "Leo", "Sagittarius"];
-const air = ["Gemini", "Libra", "Aquarius"];
-const water = ["Cancer", "Scorpio", "Pisces"];
+const toggleDropdown = function () {
+    dropdownMenu.classList.toggle("show");
+    toggleArrow.classList.toggle("arrow");
+  };
 
-function show(starSign) {
-    document.querySelector(".text-box").value = value;
+  dropdownBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    toggleDropdown();
+  });
+
+  document.documentElement.addEventListener("click", function () {
+    if (dropdownMenu.classList.contains("show")) {
+      toggleDropdown();
+    }
+  });
+
+
+
+  //STUCK HERE- Trying to add event listener to onclick into a variable
+  document.documentElemenById("myDropdown").onchange = function () {
+    alert(this.value);
+  }
+
+/*
+//Function to enable chosen sign to be saved into a variable...
+function setSign () {
+  var chosenSign = document.getElementById("myDropdown").value;
+  }
+ */ 
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+
+
+/*Arrays for the different star signs so that I can then call them depending on which 
+astrological element they belong to */
+
+
+const starSign = ["Aries", "Leo", "Sagittarius", "Taurus", "Virgo", "Capricorn", "Gemini", "Libra", "Aquarius", "Cancer", "Scorpio", "Pisces"];
+
+
+const fire = (starSign [0, 1, 2]);
+//const fire = ["Aries", "Leo", "Sagittarius"];
+const earth = (starSign [3, 4, 5]);
+//const earth = ["Taurus", "Virgo", "Capricorn"];
+const air = (starSign [6, 7, 8]);
+//const air = ["Gemini", "Libra", "Aquarius"];
+const water = (starSign [9, 10, 11]);
+//const water = ["Cancer", "Scorpio", "Pisces"]; 
+
+
+
+// Going to cut out section below and switch to a random quote regardless of option.
+//Still need option to be selected so that element value can be added to string reply.
+
+/* Now I need to create an if/else so that when the options are 
+made I can then push them into their catagories.
+After which I need to create another section 
+with a function that calls random quotes and which
+fires out a string of text, and the random quote! 
+
+if (starSign= "fire") {
+    console.log("Hello ${name} your Starsign is a fire element. Here is your chosen quote for today. ${newQuote}");
+} else if {
+    (starSign= "earth") {
+        console.log("Hello ${name} your Starsign is an earth element. Here is your chosen quote for today. ${newQuote}");
+    } else if {
+            (starSign = "air") {
+                console.log("Hello ${name} your Starsign is an air element. Here is your chosen quote for today. ${newQuote}");
+            } else {
+                console.log("Hello ${name} your Starsign is a water element. Here is your chosen quote for today. ${newQuote}");
+            }
+        }
+    }
 }
+*/
 
-let dropdown = document.querySelector(".dropdown")dropdown.onclick = function(); {
-    dropdown.classList.toggle("active")
+
+var quotes = [
+    "You cannot just sit there and wait for people to give you that golden dream. You have to go out there and make it happen. - Diana Ross", 
+    "Embrace your inner lion, for a Leo's roar has the power to inspire, uplift and ignite the fire within others. - Graciousquotes.com", 
+    "Embrace what makes you unique, even if it makes others uncomfortable. - Janelle Monae", 
+    "Sometimes the smallest step in the right direction ends up being the biggest step of your life! - Naeem Callaway",
+    "Nothing is impossible. The word itself says 'I'm possible!' - Audrey Hepburn",
+    "The bad news is time flies. The good news is you're the pilot. - Michael Altshuler",
+    "Spread love everywhere you go. - Mother Teresa",
+    "Nobody can make you feel inferior wihtout your consent. - Eleanor Roosevelt",
+    "Concentrate all your thoughts upon the work in hand. The sun's rays do not burn until brought to a focus. - Alexander Graham Bell",
+    "The most difficult thing is the decision to act, the rest is merely tenacity. - Amelia Earhart",
+    "Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence. - Helen Keller",
+    "Just one small positive thought in the morning can change your whole day. - Dalai Lama" 
+]
+
+function newQuote() {
+    var randomNumber = Math.floor(Math.random() * (quotes.length));
+    document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 }
-
-/* <div class = "dropdown">
-<div id="myDropdown" class = "dropdown-content">
-    <button onclick = "myFunction()" class = "dropbtn">Dropdown
-    <a href="#">Aquarius</a>
-    <a href="#">Pisces</a>
-    <a href="#">Aries</a>
-    <a href="#">Taurus</a>
-    <a href="#">Gemini</a>
-    <a href="#">Cancer</a>
-    <a href="#">Leo</a>
-    <a href="#">Virgo</a>
-    <a href="#">Libra</a>
-    <a href="#">Scorpio</a>
-    <a href="#">Sagittarius</a>
-    <a href="#">Capricorn</a>
-    </button>
-</div>
-</div> */
 
 
 

@@ -1,99 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <!--- Here is the base HTML for my mixed messages random message generator.  My CSS and JavaScript will sit on this page for viewing by users. With the generator sitting within the main section of this page.-->
+<!--- Here is the base HTML for my mixed messages random message generator.  My CSS and JavaScript will sit on this page for viewing by users. With the generator sitting within the main section of this page.-->
     
-    <head>
-        <title>Mixed Messages</title>
-            <meta chartset=""utf-8">
-            <meta name="viewport" content="'width=device-width, initial-scale=1.0">
+<head>
+    <!--- <title>Mixed Messages</title> --->
+        <meta charset="utf-8">
+        <meta name="viewport" content="'width=device-width, initial-scale=1.0">
 
-            <link rel="stylesheet" href="style.css">
-            <script src="script.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" type="text/javascript"></script>
+        
+
+</head>
+<!--- START Main content-->
+<main>
+
+    <header><h1>Mixed Messages</h1></header>
+    <br>
+    <br><br><br>
+
+
+    <p><h4>Welcome to the Mixed Messages quote generator.</h4><br><br>
+        <br>You will need to enter your name in the box below, and choose your starsign for your message to be generated, just for you!<br>
+    </p><br>
+<br>
+<br><br>
+
+    <p>Here is a reminder of the relevant dates for your star signs.<br>
+        <br>
+        <b>Aquarius</b> - (20 Jan - 18 Feb)<br>
+        <b>Pisces</b> - (19 Feb - 20 Mar)<br>
+        <b>Aries</b> - (21 Mar - 19 Apr)<br>
+        <b>Taurus</b> - (20 Apr - 20 May)<br>
+        <b>Gemini</b> - (21 May - 21 Jun)<br>
+        <b>Cancer</b> - (22 Jun - 22 Jul)<br>
+        <b>Leo</b> - (23 Jul - 22 Aug)<br>
+        <b>Virgo</b> - (23 Aug - 22 Sep)<br>
+        <b>Libra</b> - (23 Sep - 23 Oct)<br>
+        <b>Scorpio</b> - (24 Oct - 21 Nov)<br>
+        <b>Sagittarius</b> - (22 Nov - 21 Dec)<br>
+        <b>Capricorn</b> - (22 Dec - 19 Jan)<br>
+    </p><br>
+    <br>
+    <br>
+
+<form>
+    <div>
+    <input type="text" class="name" placeholder="Enter your name here">
+    <button class="btn" onclick="fn1()" id="btn">Confirm name</button>   
+    <br>
+</div>
+</form>
+
+    <!--- <script>
+        function fn1() {
+    var str = document.getElementById("name").value;
+    alert("Value inside the text box is: " +str);
+  }
+    </script> --->
+   
+
+    
+        <div class="dropdown">
+             
+            <button onclick="myFunction()" class="dropbtn" select="arrow">What's your Starsign?
+            </button>
             
 
-    </head>
-    <body>
-
-        <header><h2>Mixed Messages</h2></header>
-
-        <p>Welcome to the Mixed Messages text generator.
-        <br>Choose your options below and click the button to have your very own message.</p>
-        <br>
-        <br>
-        <p>Here is a reminder of dates for your star signs.<br>
-            <br>
-            <b>Aquarius</b> - (20th January to 18th February)</a><br>
-            <b>Pisces</b> - (19th February to 20th March)</a><br>
-            <b>Aries</b> - (21st March to 19th April)</a><br>
-            <b>Taurus</b> - (20th April to 20th May)</a><br>
-            <b>Gemini</b> - (21st May to 21st June)</a><br>
-            <b>Cancer</b> - (22nd June to 22nd July)</a><br>
-            <b>Leo</b> - (23rd July to 22nd August)</a><br>
-            <b>Virgo</b> - (23rd August to 22nd September)</a><br>
-            <b>Libra</b> - (23rd September to 23rd October)</a><br>
-            <b>Scorpio</b> - (24th October to 21st November)</a><br>
-            <b>Sagittarius</b> - (22nd November to 21st December)</a><br>
-            <b>Capricorn</b> - (22nd December to 19th January)</a><br>
-        </p><br>
-        <br>
-        <br>
-
-
-
-
-
-
-  
-        <!-- <div class = "dropdown">
-            <input class = "text-box" type = "text" placeholder = "Starsign" readonly>
-            <div class = "options">
-                <div onclick = "show( 'Aquarius')">Aquarius</div>
-                <div onclick = "show( 'Pisces')">Pisces</div>
-                <div onclick = "show( 'Aries')">Aries</div>
-                <div onclick = "show( 'Taurus')">Taurus</div>
-                <div onclick = "show( 'Gemini')">Gemini</div>
-                <div onclick = "show( 'Cancer')">Cancer</div>
-                <div onclick = "show( 'Leo')">Leo</div>
-                <div onclick = "show( 'Virgo')">Virgo</div>
-                <div onclick = "show( 'Libra')">Libra</div>
-                <div onclick = "show( 'Scorpio')">Scorpio</div>
-                <div onclick = "show( 'Sagittarius')">Sagittarius</div>
-                <div onclick = "show( 'Capricorn')">Capricorn</div>
-            </div>
-        </div> --->
-         
-            <!---
-                <li><a href="#" class = "nav-button">Starsign</a></li>
-                 <button onclick = "myFunction()" class = "dropbtn">Dropdown
-                <li><a href="#">Aquarius</a></li>
-                <li><a href="#">Pisces</a></li>
-                <li><a href="#">Aries</a></li>
-                <li><a href="#">Taurus</a></li>
-                <li><a href="#">Gemini</a></li>
-                <li><a href="#">Cancer</a></li>
-                <li><a href="#">Leo</a></li>
-                <li><a href="#">Virgo</a></li>
-                <li><a href="#">Libra</a></li>
-                <li><a href="#">Scorpio</a></li>
-                <li><a href="#">Sagittarius</a></li>
-                <li><a href="#">Capricorn</a></li>
-                </ul> --->
-                <!--- </button> --->
-            
-
-       <!--- <div id="messageDisplay">
-
+          <div id="myDropdown" class="dropdown-content" onchange="setSign(this);">
+            <a href value ="#aquarius">Aquarius</a>
+            <a href value ="#pisces">Pisces</a>
+            <a href value ="#aries">Aries</a>
+            <a href value ="#taurus">Taurus</a>
+            <a href value ="#gemini">Gemini</a>
+            <a href value ="#cancer">Cancer</a>
+            <a href value ="#leo">Leo</a>
+            <a href value ="#virgo">Virgo</a>
+            <a href value ="#libra">Libra</a>
+            <a href value ="#scorpio">Scorpio</a>
+            <a href value ="#sagittarius">Sagittarius</a>
+            <a href value ="#capricorn">Capricorn</a>
+          </div>
         </div>
-        <button onclick="newMessage()">Your Message</button> --->
-    
-    
-        <nav></nav>
+        <br>
+       <br>
+       <br>
 
-        <footer> </footer>
+        <div id="quoteDisplay">
+            <!--- Quotes will display here -->
+        </div>
+        <button class="btn2" id="btn2" onclick="newQuote()">Your quote of the day!</button>
+        <script src="script.js"></script>
 
-    </body>
-
+</main>
 
 
 
