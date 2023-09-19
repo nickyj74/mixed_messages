@@ -21,12 +21,6 @@ const toggleDropdown = function () {
   });
 
 
-
-  //STUCK HERE- Trying to add event listener to onclick into a variable
-  document.documentElemenById("myDropdown").onchange = function () {
-    alert(this.value);
-  }
-
 /*
 //Function to enable chosen sign to be saved into a variable...
 function setSign () {
@@ -39,7 +33,6 @@ toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
-
 
 
 /*Arrays for the different star signs so that I can then call them depending on which 
@@ -57,33 +50,6 @@ const air = (starSign [6, 7, 8]);
 //const air = ["Gemini", "Libra", "Aquarius"];
 const water = (starSign [9, 10, 11]);
 //const water = ["Cancer", "Scorpio", "Pisces"]; 
-
-
-
-// Going to cut out section below and switch to a random quote regardless of option.
-//Still need option to be selected so that element value can be added to string reply.
-
-/* Now I need to create an if/else so that when the options are 
-made I can then push them into their catagories.
-After which I need to create another section 
-with a function that calls random quotes and which
-fires out a string of text, and the random quote! 
-
-if (starSign= "fire") {
-    console.log("Hello ${name} your Starsign is a fire element. Here is your chosen quote for today. ${newQuote}");
-} else if {
-    (starSign= "earth") {
-        console.log("Hello ${name} your Starsign is an earth element. Here is your chosen quote for today. ${newQuote}");
-    } else if {
-            (starSign = "air") {
-                console.log("Hello ${name} your Starsign is an air element. Here is your chosen quote for today. ${newQuote}");
-            } else {
-                console.log("Hello ${name} your Starsign is a water element. Here is your chosen quote for today. ${newQuote}");
-            }
-        }
-    }
-}
-*/
 
 
 var quotes = [
@@ -107,4 +73,37 @@ function newQuote() {
 }
 
 
+//TO DO___ Function to allow an alert box to pop up and bring items into statement
+/*function sendQuote() {
+  alert ('Hello ${name}, you have chosen ${starSign}, which is an ${element}. Here is your quote to guide you for today... ${newQuote}');
+}*/
 
+/* Now I need to create an if/else so that when the options are 
+made I can then push them into their catagories.
+After which I need to create another section 
+with a function that calls random quotes and which
+fires out a string of text, and the random quote! */
+
+function sendMessage () {
+  if (starSign === "fire") {
+    console.log ("Your Starsign is a fire element, so we have selected the following quote for you today... " + "${newQuote}");
+  } else if {
+    (starSign === "earth") {
+      console.log ("Your Starsign is an earth element, so we have selected the following quote for you today... " + "${newQuote}");
+    } else if {
+      (starSign === "air")  {
+        console.log("Your Starsign is an air element, so we have selected the following quote for you today... " + "${newQuote}");
+      } else {
+        console.log("Your Starsign is a water element, so we have selected the following quote for you today... " + "${newQuote}");
+      }
+    }
+  }
+}
+
+
+  //STUCK HERE- Trying to add event listener to onclick into a variable
+  document.documentElemenById("myDropdown").onchange = function () {
+    alert(this.value);
+  }
+
+  //sendMessage.target.addEventListener("newQuote", sendMessage);
