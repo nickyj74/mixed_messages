@@ -52,12 +52,7 @@ body {
   color: darkslategrey;
 }
 
-.name {
-  align-items: center;
-  position: center;
-}
-
-.btn {
+.box {
   background-color: lightgrey;
   color: darkslategrey;
   display: flex;

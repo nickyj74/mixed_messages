@@ -21,27 +21,38 @@ const toggleDropdown = function () {
   });
 
 
-/*
+// !!DO I NEED THIS ?!
 //Function to enable chosen sign to be saved into a variable...
-function setSign () {
+/*function setSign () {
   var chosenSign = document.getElementById("myDropdown").value;
   }
  */ 
 
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
 
 
-/*Arrays for the different star signs so that I can then call them depending on which 
-astrological element they belong to */
+// starSign dictionary...
+
+const starSign = {
+  "Aries" : "fire",
+  "Leo" : "fire",
+  "Sagittarius" : "fire",
+  "Taurus" : "earth",
+  "Virgo" : "earth",
+  "Capricorn" : "earth",
+  "Gemini" : "air",
+  "Libra" : "air",
+  "Aquarius" : "air",
+  "Cancer" : "water",
+  "Scorpio" : "water",
+  "Pisces" : "water"
+}
 
 
-const starSign = ["Aries", "Leo", "Sagittarius", "Taurus", "Virgo", "Capricorn", "Gemini", "Libra", "Aquarius", "Cancer", "Scorpio", "Pisces"];
-
-
+/*
 const fire = (starSign [0, 1, 2]);
 //const fire = ["Aries", "Leo", "Sagittarius"];
 const earth = (starSign [3, 4, 5]);
@@ -50,7 +61,9 @@ const air = (starSign [6, 7, 8]);
 //const air = ["Gemini", "Libra", "Aquarius"];
 const water = (starSign [9, 10, 11]);
 //const water = ["Cancer", "Scorpio", "Pisces"]; 
+*/
 
+//Create an array of quotes...
 
 var quotes = [
     "You cannot just sit there and wait for people to give you that golden dream. You have to go out there and make it happen. - Diana Ross", 
@@ -67,43 +80,32 @@ var quotes = [
     "Just one small positive thought in the morning can change your whole day. - Dalai Lama" 
 ]
 
+//Randomise the quotes...
+
 function newQuote() {
     var randomNumber = Math.floor(Math.random() * (quotes.length));
     document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 }
 
 
-//TO DO___ Function to allow an alert box to pop up and bring items into statement
-/*function sendQuote() {
-  alert ('Hello ${name}, you have chosen ${starSign}, which is an ${element}. Here is your quote to guide you for today... ${newQuote}');
-}*/
-
-/* Now I need to create an if/else so that when the options are 
-made I can then push them into their catagories.
-After which I need to create another section 
-with a function that calls random quotes and which
-fires out a string of text, and the random quote! */
+/// Now I need to create an if/else so that when the options are made I can then push them into their catagories.
 
 function sendMessage () {
-  if (starSign === "fire") {
-    console.log ("Your Starsign is a fire element, so we have selected the following quote for you today... " + "${newQuote}");
-  } else if {
-    (starSign === "earth") {
-      console.log ("Your Starsign is an earth element, so we have selected the following quote for you today... " + "${newQuote}");
-    } else if {
-      (starSign === "air")  {
-        console.log("Your Starsign is an air element, so we have selected the following quote for you today... " + "${newQuote}");
+  if (starSign = "fire") {
+    console.log("Hello ${name}, your Starsign is a fire element, so we have selected the following quote for you today... " + "${newQuote}");
+  } else if (starSign = "earth") {
+      console.log("Hello ${name}, your Starsign is an earth element, so we have selected the following quote for you today... " + "${newQuote}");
+    } else if (starSign = "air") {
+       console.log("Hello ${name}, your Starsign is an air element, so we have selected the following quote for you today... " + "${newQuote}");
       } else {
-        console.log("Your Starsign is a water element, so we have selected the following quote for you today... " + "${newQuote}");
+        console.log("Hello ${name}, your Starsign is a water element, so we have selected the following quote for you today... " + "${newQuote}");
       }
     }
-  }
-}
 
 
-  //STUCK HERE- Trying to add event listener to onclick into a variable
-  document.documentElemenById("myDropdown").onchange = function () {
+  // !! STUCK HERE!! - Trying to create a final string message with interpolations of the user name, starsign and their random quote...
+  document.getElementById("myDropdown").onchange = function () {
     alert(this.value);
   }
-
-  //sendMessage.target.addEventListener("newQuote", sendMessage);
+//or ??
+document.getElementById("setSign", sendMessage);

@@ -22,7 +22,7 @@
 
 
     <p><h4>Welcome to the Mixed Messages quote generator.</h4><br><br>
-        <br>You will need to enter your name in the box below, and choose your starsign for your message to be generated, just for you!<br>
+        <br>You will need to choose your starsign for your personal message to be generated!<br>
     </p><br>
 <br>
 <br><br>
@@ -44,36 +44,36 @@
     </p><br>
     <br>
     <br>
-<!---
+
 <form>
     <div>
-    <input type="text" class="name" placeholder="Enter your name here">
-    <button class="btn" onclick="fn1()" id="btn">Confirm name</button>   
+    <input type="text" class="box" placeholder="Enter your name here" required>
+    <!--- <button class="btn" onclick="fn1()" id="btn">Confirm name</button> --->  
     <br>
 </div>
 </form>
---->
 
+<br>
 <div class="dropdown">
              
-            <button onclick="myFunction()" class="dropbtn" select="arrow">What's your Starsign?
+            <button onclick="myFunction()" class="box" select="arrow">What's your Starsign?
             </button>
             
 
-          <div id="myDropdown" class="dropdown-content" onchange="setSign(this);">
-            <a href value ="#aquarius">Aquarius</a>
-            <a href value ="#pisces">Pisces</a>
-            <a href value ="#aries">Aries</a>
-            <a href value ="#taurus">Taurus</a>
-            <a href value ="#gemini">Gemini</a>
-            <a href value ="#cancer">Cancer</a>
-            <a href value ="#leo">Leo</a>
-            <a href value ="#virgo">Virgo</a>
-            <a href value ="#libra">Libra</a>
-            <a href value ="#scorpio">Scorpio</a>
-            <a href value ="#sagittarius">Sagittarius</a>
-            <a href value ="#capricorn">Capricorn</a>
-          </div>
+          <select id="myDropdown" class="dropdown-content" onchange="setSign(this);">
+            <option value ="aquarius">Aquarius</option>
+            <option value ="pisces">Pisces</option>
+            <option value ="aries">Aries</option>
+            <option value ="taurus">Taurus</option>
+            <option value ="gemini">Gemini</option>
+            <option value ="cancer">Cancer</option>
+            <option value ="leo">Leo</option>
+            <option value ="virgo">Virgo</option>
+            <option value ="libra">Libra</option>
+            <option value ="scorpio">Scorpio</option>
+            <option value ="sagittarius">Sagittarius</option>
+            <option value ="capricorn">Capricorn</option>
+          </select>
         </div>
         <br>
        <br>
@@ -82,7 +82,7 @@
         <div id="quoteDisplay">
             <!--- Quotes will display here -->
         </div>
-        <button class="btn2" id="btn2" onclick="newQuote()">Your quote of the day!</button>
+        <button class="btn2" id="btn2" onclick="sendMessage()">Your quote of the day!</button>
         <script src="script.js"></script>
 
 </main>
