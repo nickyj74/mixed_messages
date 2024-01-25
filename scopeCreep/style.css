@@ -1,49 +1,43 @@
-* {
-  margin: 5px 5px;
-  padding: 5px;
-  font-family: "Montserrat", sans-serif;
-  flex-direction: column;
-  align-items: center;
-}
-
-h1 {
+h2 {
     text-align: center;
-}
-
-h4 {
-  text-align: center;
 }
 
 p {
     text-align: center;
 }
 
-li {
-  text-align: center;
-  padding: 3px;
-  width: 100%;
-  list-style: none;
-}
-
-.input {
-  align-items: center;
-  position: relative;
+p2 {
+    text-align: relative;
 }
 
 .name {
     font-family: "Montserrat", sans-serif;
     background-color: whitesmoke;
     color: darkslategrey;
-    position: relative;
-    justify-content: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     padding: 0.6rem;
     border-radius: var(--radius);
     border: none;
     box-shadow: var(--shadow);
+    position: relative;
 }
 
 .quoteDisplay {
     color: darkslategrey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  --shadow: darkslategrey 0px 6px 10px 0px,
+    darkslategrey 0px 0px 0px 1px;
+  --color: ivory;
+  --gap: 2px;
+  --radius: 5px;
 }
 
 body {
@@ -53,14 +47,14 @@ body {
   color: darkslategrey;
 }
 
-.box {
+.btn {
   background-color: lightgrey;
   color: darkslategrey;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   column-gap: var(--gap);
-  padding: 0.5rem;
+  padding: 0.6rem;
   cursor: pointer;
   border-radius: var(--radius);
   border: none;
@@ -127,16 +121,3 @@ body {
   visibility: visible;
 }
 
-.btn2 {
-  background-color: lightgrey;
-  color: darkslategrey;
-  display: inline-block;
-  width: 75%;
-  align-items: center;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 15px;
-  border: none;
-  box-shadow: var(--shadow);
-  position: relative;
-}

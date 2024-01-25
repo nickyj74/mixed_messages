@@ -1,7 +1,8 @@
+<!---
 <!DOCTYPE html>
 <html lang="en">
 
-<!--- Here is the base HTML for my mixed messages random message generator.  My CSS and JavaScript will sit on this page for viewing by users. With the generator sitting within the main section of this page.-->
+<!--- Here is the base HTML for my mixed messages random message generator.  My CSS and JavaScript will sit on this page for viewing by users. With the generator sitting within the main section of this page. --->
     
 <head>
     <!--- <title>Mixed Messages</title> --->
@@ -9,7 +10,7 @@
         <meta name="viewport" content="'width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="style.css">
-        <script src="script.js" type="text/javascript"></script>
+        <script src="mix_mess2/mix_mess.js" type="text/javascript"></script>
         
 
 </head>
@@ -21,73 +22,63 @@
     <br><br><br>
 
 
-    <p><h4>Welcome to the Mixed Messages quote generator.</h4><br><br>
-        <br>You will need to choose your starsign for your personal message to be generated!<br>
-    </p><br>
-<br>
-<br><br>
-
-    <p>Here is a reminder of the relevant dates for your star signs.<br>
+    <h4>Welcome to the Mixed Messages quote generator.</h4><br>
         <br>
-        <b>Aquarius</b> - (20 Jan - 18 Feb)<br>
-        <b>Pisces</b> - (19 Feb - 20 Mar)<br>
-        <b>Aries</b> - (21 Mar - 19 Apr)<br>
-        <b>Taurus</b> - (20 Apr - 20 May)<br>
-        <b>Gemini</b> - (21 May - 21 Jun)<br>
-        <b>Cancer</b> - (22 Jun - 22 Jul)<br>
-        <b>Leo</b> - (23 Jul - 22 Aug)<br>
-        <b>Virgo</b> - (23 Aug - 22 Sep)<br>
-        <b>Libra</b> - (23 Sep - 23 Oct)<br>
-        <b>Scorpio</b> - (24 Oct - 21 Nov)<br>
-        <b>Sagittarius</b> - (22 Nov - 21 Dec)<br>
-        <b>Capricorn</b> - (22 Dec - 19 Jan)<br>
+        <p>You will need to choose your starsign for your personal message to be generated!<br>
     </p><br>
+
+    <p>Here is a reminder of the relevant dates for your star signs:</p><br>
+
+        <li><b>Aquarius</b> - (20 Jan - 18 Feb)<br></li>    
+        <li><b>Pisces</b> - (19 Feb - 20 Mar)<br></li>
+        <li><b>Aries</b> - (21 Mar - 19 Apr)<br></li>
+        <li><b>Taurus</b> - (20 Apr - 20 May)<br></li>
+        <li><b>Gemini</b> - (21 May - 21 Jun)<br></li>
+        <li><b>Cancer</b> - (22 Jun - 22 Jul)<br></li>
+        <li><b>Leo</b> - (23 Jul - 22 Aug)<br></li>
+        <li><b>Virgo</b> - (23 Aug - 22 Sep)<br></li>
+        <li><b>Libra</b> - (23 Sep - 23 Oct)<br></li>
+        <li><b>Scorpio</b> - (24 Oct - 21 Nov)<br></li>
+        <li><b>Sagittarius</b> - (22 Nov - 21 Dec)<br></li>
+        <li><b>Capricorn</b> - (22 Dec - 19 Jan)<br></li>
     <br>
     <br>
 
 <form>
-    <div>
+    <div class="input">
     <input type="text" class="box" placeholder="Enter your name here" required>
-    <!--- <button class="btn" onclick="fn1()" id="btn">Confirm name</button> --->  
-    <br>
+      
 </div>
 </form>
 
 <br>
 <div class="dropdown">
-             
-            <button onclick="myFunction()" class="box" select="arrow">What's your Starsign?
-            </button>
-            
-
-          <select id="myDropdown" class="dropdown-content" onchange="setSign(this);">
-            <option value ="aquarius">Aquarius</option>
-            <option value ="pisces">Pisces</option>
-            <option value ="aries">Aries</option>
-            <option value ="taurus">Taurus</option>
-            <option value ="gemini">Gemini</option>
-            <option value ="cancer">Cancer</option>
-            <option value ="leo">Leo</option>
-            <option value ="virgo">Virgo</option>
-            <option value ="libra">Libra</option>
-            <option value ="scorpio">Scorpio</option>
-            <option value ="sagittarius">Sagittarius</option>
-            <option value ="capricorn">Capricorn</option>
-          </select>
+    
+        <button onclick="myFunction()" class="dropbtn" select="arrow">Click to choose your starsign</button>
+            <select id="myDropdown" class="dropdown-content" onchange="setSign(this);">
+                <option value ="aquarius">Aquarius</option>
+                <option value ="pisces">Pisces</option>
+                <option value ="aries">Aries</option>
+                <option value ="taurus">Taurus</option>
+                <option value ="gemini">Gemini</option>
+                <option value ="cancer">Cancer</option>
+                <option value ="leo">Leo</option>
+                <option value ="virgo">Virgo</option>
+                <option value ="libra">Libra</option>
+                <option value ="scorpio">Scorpio</option>
+                <option value ="sagittarius">Sagittarius</option>
+                <option value ="capricorn">Capricorn</option>
+            </select>
         </div>
         <br>
        <br>
        <br>
 
+        <button class="btn2" id="btn2" onclick= display(alert(`Hello ${name}, your quote of the day is ${random[randomQuote]}))>Your quote of the day!</button>
         <div id="quoteDisplay">
             <!--- Quotes will display here -->
         </div>
-        <button class="btn2" id="btn2" onclick="sendMessage()">Your quote of the day!</button>
         <script src="script.js"></script>
-
 </main>
-
-
-
-
 </html>
+--->
