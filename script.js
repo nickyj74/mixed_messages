@@ -21,7 +21,7 @@ const toggleDropdown = function () {
   });
 
 
-// !!DO I NEED THIS ?!
+// !!DO I NEED THIS --- need to check?!
 //Function to enable chosen sign to be saved into a variable...
 /*function setSign () {
   var chosenSign = document.getElementById("myDropdown").value;
