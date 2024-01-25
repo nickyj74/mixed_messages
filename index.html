@@ -1,84 +1,73 @@
-<!---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">   
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="'width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <script src="./script.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Mixed Messages</h1>
+            </header>
+            <br>
+            <h3>Welcome to the Mixed Messages quote generator.</h3><br>
+            <hr>
+            <br>
+                <p>
+                    Take a moment to check your birthdate and choose the right sign.
+                    <br>Then you can choose your starsign from the dropdown 
+                    <br>Your personalised daily quote will then be displayed for you!
+                </p>
+                <br>
+                <hr>
+                <br>
 
-<!--- Here is the base HTML for my mixed messages random message generator.  My CSS and JavaScript will sit on this page for viewing by users. With the generator sitting within the main section of this page. --->
-    
-<head>
-    <!--- <title>Mixed Messages</title> --->
-        <meta charset="utf-8">
-        <meta name="viewport" content="'width=device-width, initial-scale=1.0">
+                <p>Here is your reminder of the relevant dates for your star signs:</p><br>
 
-        <link rel="stylesheet" href="style.css">
-        <script src="mix_mess2/mix_mess.js" type="text/javascript"></script>
-        
+                    <li><b>Aquarius</b> - (20 Jan - 18 Feb)<br></li>    
+                    <li><b>Pisces</b> - (19 Feb - 20 Mar)<br></li>
+                    <li><b>Aries</b> - (21 Mar - 19 Apr)<br></li>
+                    <li><b>Taurus</b> - (20 Apr - 20 May)<br></li>
+                    <li><b>Gemini</b> - (21 May - 21 Jun)<br></li>
+                    <li><b>Cancer</b> - (22 Jun - 22 Jul)<br></li>
+                    <li><b>Leo</b> - (23 Jul - 22 Aug)<br></li>
+                    <li><b>Virgo</b> - (23 Aug - 22 Sep)<br></li>
+                    <li><b>Libra</b> - (23 Sep - 23 Oct)<br></li>
+                    <li><b>Scorpio</b> - (24 Oct - 21 Nov)<br></li>
+                    <li><b>Sagittarius</b> - (22 Nov - 21 Dec)<br></li>
+                    <li><b>Capricorn</b> - (22 Dec - 19 Jan)<br></li>
+                <br>
+                <hr>
+                <br>
 
-</head>
-<!--- START Main content-->
-<main>
+        <div class="dropdown" style="text-align: center;">
+            <h3>Click to choose your starsign</h3>
+                <select class="dropbtn">
+                    <option disabled hidden selected>Choose your starsign</option>
+                    <option value ="aquarius">Aquarius</option>
+                    <option value ="pisces">Pisces</option>
+                    <option value ="aries">Aries</option>
+                    <option value ="taurus">Taurus</option>
+                    <option value ="gemini">Gemini</option>
+                    <option value ="cancer">Cancer</option>
+                    <option value ="leo">Leo</option>
+                    <option value ="virgo">Virgo</option>
+                    <option value ="libra">Libra</option>
+                    <option value ="scorpio">Scorpio</option>
+                    <option value ="sagittarius">Sagittarius</option>
+                    <option value ="capricorn">Capricorn</option>
+                </select>
+                
+                <p id="quoteOfTheDay">
 
-    <header><h1>Mixed Messages</h1></header>
-    <br>
-    <br><br><br>
-
-
-    <h4>Welcome to the Mixed Messages quote generator.</h4><br>
-        <br>
-        <p>You will need to choose your starsign for your personal message to be generated!<br>
-    </p><br>
-
-    <p>Here is a reminder of the relevant dates for your star signs:</p><br>
-
-        <li><b>Aquarius</b> - (20 Jan - 18 Feb)<br></li>    
-        <li><b>Pisces</b> - (19 Feb - 20 Mar)<br></li>
-        <li><b>Aries</b> - (21 Mar - 19 Apr)<br></li>
-        <li><b>Taurus</b> - (20 Apr - 20 May)<br></li>
-        <li><b>Gemini</b> - (21 May - 21 Jun)<br></li>
-        <li><b>Cancer</b> - (22 Jun - 22 Jul)<br></li>
-        <li><b>Leo</b> - (23 Jul - 22 Aug)<br></li>
-        <li><b>Virgo</b> - (23 Aug - 22 Sep)<br></li>
-        <li><b>Libra</b> - (23 Sep - 23 Oct)<br></li>
-        <li><b>Scorpio</b> - (24 Oct - 21 Nov)<br></li>
-        <li><b>Sagittarius</b> - (22 Nov - 21 Dec)<br></li>
-        <li><b>Capricorn</b> - (22 Dec - 19 Jan)<br></li>
-    <br>
-    <br>
-
-<form>
-    <div class="input">
-    <input type="text" class="box" placeholder="Enter your name here" required>
-      
-</div>
-</form>
-
-<br>
-<div class="dropdown">
-    
-        <button onclick="myFunction()" class="dropbtn" select="arrow">Click to choose your starsign</button>
-            <select id="myDropdown" class="dropdown-content" onchange="setSign(this);">
-                <option value ="aquarius">Aquarius</option>
-                <option value ="pisces">Pisces</option>
-                <option value ="aries">Aries</option>
-                <option value ="taurus">Taurus</option>
-                <option value ="gemini">Gemini</option>
-                <option value ="cancer">Cancer</option>
-                <option value ="leo">Leo</option>
-                <option value ="virgo">Virgo</option>
-                <option value ="libra">Libra</option>
-                <option value ="scorpio">Scorpio</option>
-                <option value ="sagittarius">Sagittarius</option>
-                <option value ="capricorn">Capricorn</option>
-            </select>
+                </p>
         </div>
         <br>
-       <br>
-       <br>
-
-        <button class="btn2" id="btn2" onclick= display(alert(`Hello ${name}, your quote of the day is ${random[randomQuote]}))>Your quote of the day!</button>
-        <div id="quoteDisplay">
-            <!--- Quotes will display here -->
-        </div>
-        <script src="script.js"></script>
-</main>
+        <br>
+        <br>
+            <script src="./script.js"></script>
+        </main>
+    </body>
 </html>
---->
