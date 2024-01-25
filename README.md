@@ -26,9 +26,9 @@ The user will click on a button, to choose their star sign, which when elicit a 
 
 
 ## Technologies:
-- > JavaScript
-- > HTML
-- > CSS
+ > JavaScript
+ > HTML
+ > CSS
 
 
 ## Collaborators:
