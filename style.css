@@ -8,8 +8,8 @@ body {
   flex-direction: column;
   margin: 5px 5px;
   padding: 25px;
-  font-size: 17px;
-  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-family: 'Cinzel Decorative', serif;
   color: darkslategray;
   background-color: ivory;
 }
@@ -38,8 +38,50 @@ li {
   color: darkslategrey;
   font-weight: 500;
   padding: 14px;
-  font-size: 18px;
+  font-size: 19px;
   border-color: darkslategrey;
   cursor: pointer;
   border-radius: 23px;
+}
+
+.dropbtn:hover {
+  background-color: darkslategray;
+  color: ivory;
+}
+
+.enterBtn {
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: whitesmoke;
+  width: 50%;
+  color: darkslategrey;
+  font-weight: 500;
+  padding: 14px;
+  font-size: 19px;
+  border-color: darkslategrey;
+  cursor: pointer;
+  border-radius: 23px;
+}
+
+.enterBtn:hover {
+  background-color: darkslategray;
+  color: ivory;
+}
+
+.quoteOfTheDay {
+  text-align: center;
+  letter-spacing: 1px;
+  border-color: darkslategray;
+  margin: auto;
+  height: 200px;
+  width: 90%;
+  background-color: ivory;
+  font-weight: 500;
+  padding: 14px;
+  font-size: 25px;
+  border-radius: 23px;
+}
+
+.quoteOfTheDay:hover {
+  background-color: whitesmoke;
 }
